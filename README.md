@@ -66,7 +66,7 @@
 ## Construction Pipeline
 
 <p align="center">
-  <img src="assets/pipeline.jpg" width="900">
+  <img src="assets/pipeline.png" width="900">
 </p>
 
 1. **Source videos**: 1,363 pristine videos from FaceForensics++ (1,000) and the DeepFake Detection dataset (363).
