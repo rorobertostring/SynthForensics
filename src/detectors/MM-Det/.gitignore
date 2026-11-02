@@ -1,0 +1,8 @@
+weights/
+data/
+preprocessing/recons/
+preprocessing/mmfr/
+preprocessing/results/
+preprocessing/*.log
+**/__pycache__/
+launch-test-customized.sh

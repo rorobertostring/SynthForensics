@@ -1,0 +1,31 @@
+__pycache__/
+checkpoint/*
+checkpoint
+results/*
+.DS_Store
+results/*
+*.png
+*.jpg
+*.mp4
+*.log*
+*.json
+scripts/transformer/*
+compile_cache
+scripts/.gradio/*
+*.pkl
+# *.csv
+*.jsonl
+out/*
+model/
+run.sh
+
+# SynthForensics generation files
+outputs/
+models/
+result/
+examples_prev_T2V/
+
+# Upstream files matched by the rules above
+!assets/logo2.png
+!assets/main_pipeline.jpg
+!skycaptioner_v1/examples/data/*.mp4

@@ -1,0 +1,21 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.log
+
+# Model weights & checkpoints
+*.pt
+*.safetensors
+*.gguf
+ckpt/
+downloads/
+weights/
+
+# Model outputs
+output/
+*.zip
+
+# Input media
+images/
+captions/

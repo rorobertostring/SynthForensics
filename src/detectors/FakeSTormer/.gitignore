@@ -1,0 +1,24 @@
+# Preprocessing output
+preprocessed/
+preprocessed_i2v/
+
+# Results
+results/
+results_i2v/
+
+# Logs (directory and root-level txt logs)
+logs/*
+!logs/logger.py
+*_log.txt
+*_log_*.txt
+
+# Pretrained model weights
+pretrained/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/

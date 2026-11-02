@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+.venv/
+
+# Model checkpoints
+*.tar
+*.pth
+*.pt
+*.ckpt
+
+# Shell scripts
+*.sh
+
+# Results
+results/
+
+# Original CFM repository and its model definition (see README)
+original/
+test.py

@@ -1,0 +1,40 @@
+# Model weights
+pretrained_weights/
+*.pth
+*.pt
+*.ckpt
+
+# Preprocessed frames
+preprocessed/
+
+# Results
+results/
+results-i2v/
+
+# Pipeline scripts (local execution, not versioned)
+SF_bash/
+
+# Logs
+logs/*
+!logs/logger.py
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Env
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,46 @@
+# Large data directories (data/ also holds the dataset code: keep its .py files)
+data/*
+!data/*.py
+!data/feature_dataset/
+data/feature_dataset/*
+!data/feature_dataset/*.py
+nsg_cache/
+
+# Preprocessing output
+preprocessed/
+
+# Model checkpoints (large binaries)
+checkpoints/
+ckpts/
+
+# Results & run outputs
+results/
+outputs/
+multirun/
+.hydra/
+runs/
+wandb/
+
+# Log files
+*.log
+logs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment & secrets
+.env
+*.env
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

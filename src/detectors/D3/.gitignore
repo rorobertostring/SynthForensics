@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environments (if any local ones)
+.env
+.venv
+env/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+
+# Detector-specific ignores
+# Preprocessing files and folders
+preprocessing/
+*.preprocess
+preprocess_*
+
+# Results
+results/
+result_*
+
+# Logs
+logs/
+*.log
+
+# Split TXT files
+split*.txt
+*split.txt
+splits/
+
+# Other artifacts (e.g., checkpoints, temp files)
+checkpoints/
+temp/
+*.tmp
+*.pkl
+*.npy
+*.h5
+models/  # If you save trained models here

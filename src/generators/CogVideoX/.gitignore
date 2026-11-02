@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+
+# SynthForensics generation files
+/models/
+/outputs/
+
+# Upstream files matched by the root .gitignore
+!inference/encoded.pt
+!inference/gradio_composite_demo/example_videos/*.mp4
+!resources/videos/*.mp4

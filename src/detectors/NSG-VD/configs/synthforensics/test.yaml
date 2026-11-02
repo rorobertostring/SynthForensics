@@ -1,0 +1,74 @@
+defaults:
+  - _self_
+
+hydra:
+  run:
+    dir: "results/outputs/"
+
+model:
+  name: "Velocity_Single_TALL_MMD"
+  img_size: 224
+  epsilon: 10
+  sigma: 1000
+  sigma0: 0.1
+  feature_dim: 300
+  is_yy_zero: True   # MMD-MP (recommended)
+  is_smooth: True
+
+trainer:
+  num_gpus: 1
+  device_ids: [0, 1, 2, 3]
+
+seed: 42
+
+data:
+  feature_type: velocity
+  num_workers: 8
+  num_frames: 8
+  input_shape: [224, 224]
+  resolution_size: 224
+  diffuse_steps: 5
+  ref_load_len: 100   # real videos used as MMD reference
+  batch_size: 16
+  val_batch_size: 16
+
+ckpt_path: "./ckpts/standard-Pika-mp.pth"
+log_path: "./results/test/synthforensics"
+save_csv_file: "synthforensics_results.csv"
+
+synthforensics:
+  t2v_videos_dir:  "/path/to/SynthForensics/Data/SynthForensics/T2V/videos"
+  i2v_videos_dir:  "/path/to/SynthForensics/Data/SynthForensics/I2V/videos"
+  real_dir:        "/path/to/SynthForensics/Data"
+  splits_dir:      "."
+  frames_cache_dir: "./data/SynthForensics/frames_cache"
+  nsg_cache_dir:   "./data/SynthForensics/nsg_cache"
+
+  compressions:
+    - raw
+    - canonical
+    - crf23
+    - crf40
+
+  t2v_generators:
+    - cogvideox
+    - ltx2-3
+    - magi-1
+    - self-forcing
+    - skyreels-v2
+    - wan2-1
+    - daVinci-MagiHuman
+    - helios
+
+  i2v_generators:
+    - cogvideox
+    - ltx2-3
+    - skyreels-v2
+    - wan2-1
+    - daVinci-MagiHuman
+    - helios
+    - magi-1
+
+  real_datasets:
+    - FF
+    - DFD

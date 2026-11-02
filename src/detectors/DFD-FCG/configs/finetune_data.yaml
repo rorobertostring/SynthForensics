@@ -1,0 +1,21 @@
+class_path: src.dataset.base.ODDeepFakeDataModule
+init_args:
+  batch_size: 20
+  num_workers: 4
+  clip_duration: 3
+  num_frames: 10
+  train_datamodules:
+  - class_path: src.dataset.sfff.SFFFDataModule
+    init_args:
+      batch_size: 20
+      data_dir: 'datasets/sfff_finetune/'
+      vid_ext: '.avi'
+      pack: false
+      max_clips: 3
+  val_datamodules:
+  - class_path: src.dataset.sfff.SFFFDataModule
+    init_args:
+      data_dir: 'datasets/sfff_finetune/'
+      vid_ext: '.avi'
+      pack: false
+      max_clips: 1

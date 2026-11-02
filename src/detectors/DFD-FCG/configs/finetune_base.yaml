@@ -1,0 +1,29 @@
+# Overrides base.yaml for finetuning on sfff_finetune
+ckpt_path: weights/zero_shot/weights.ckpt
+ckpt_mode: tune
+seed_everything: 1019
+trainer:
+  devices: 1
+  max_epochs: 25
+  precision: 16
+early_stop:
+  monitor: "valid/SFFF/auc"
+  patience: 5
+  mode: max
+  strict: true
+checkpoint:
+  dirpath: "logs/sfff_finetune/checkpoints"
+  filename: "best"
+  monitor: "valid/SFFF/auc"
+  mode: max
+  save_top_k: 1
+  save_last: true
+optimizer:
+  lr: 0.00001
+  weight_decay: 0.0001
+lr_scheduler:
+  start_factor: 1.0
+  end_factor: 1.0
+  total_iters: 1
+  last_epoch: -1
+data: finetune_data.yaml

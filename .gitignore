@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Model weights, checkpoints and tensors
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Videos and generation outputs
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+outputs/
+*.log

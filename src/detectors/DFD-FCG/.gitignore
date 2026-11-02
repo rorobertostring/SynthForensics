@@ -1,0 +1,32 @@
+logs/
+__pycache__/
+.ipynb_checkpoints
+.DS_Store
+*.swp
+wandb/
+*.env
+datasets/
+.cache/
+lightning_logs/
+.lr_find_*
+RealForensicPreds/
+results/
+results_finetuned/
+results_from_scratch/
+checkpoint/
+.vscode/
+resources/cropped/
+resources/frame_data/
+
+# Shell scripts
+*.sh
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.pkl
+
+# Training cache and datasets
+already_processed/
+weights/

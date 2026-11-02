@@ -1,0 +1,29 @@
+*~
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+.venv/
+
+# Shell scripts
+*.sh
+
+# Model checkpoints
+*.pth
+*.pkl
+*.pt
+*.ckpt
+
+# Results
+results/
+results_finetuned/
+results_from_scratch/
+result/
+
+# Training/finetuning data (symlinks to large datasets)
+scratch_data/
+finetune_data/
+
+# Weight subdirectories (keep weight/ folder itself)
+weight/finetuning/
+weight/from_scratch/

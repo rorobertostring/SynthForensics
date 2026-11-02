@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use SynthForensics, please cite our paper."
+title: "SynthForensics: Benchmarking and Evaluating People-Centric Synthetic Video Deepfakes"
+authors:
+  - family-names: Leotta
+    given-names: Roberto
+    affiliation: iCTLab s.r.l.
+  - family-names: Sambataro
+    given-names: Salvatore Alfio
+    affiliation: University of Catania
+  - family-names: Ragaglia
+    given-names: Claudio Vittorio
+    affiliation: University of Catania
+  - family-names: Casu
+    given-names: Mirko
+    affiliation: University of Catania
+  - family-names: Petralia
+    given-names: Yuri
+    affiliation: iCTLab s.r.l.
+  - family-names: Guarnera
+    given-names: Francesco
+    affiliation: University of Catania
+  - family-names: Guarnera
+    given-names: Luca
+    affiliation: University of Catania
+  - family-names: Battiato
+    given-names: Sebastiano
+    affiliation: University of Catania
+license: MIT
+url: "https://rorobertostring.github.io/SynthForensics.github.io/"
+preferred-citation:
+  type: article
+  title: "SynthForensics: Benchmarking and Evaluating People-Centric Synthetic Video Deepfakes"
+  authors:
+    - family-names: Leotta
+      given-names: Roberto
+    - family-names: Sambataro
+      given-names: Salvatore Alfio
+    - family-names: Ragaglia
+      given-names: Claudio Vittorio
+    - family-names: Casu
+      given-names: Mirko
+    - family-names: Petralia
+      given-names: Yuri
+    - family-names: Guarnera
+      given-names: Francesco
+    - family-names: Guarnera
+      given-names: Luca
+    - family-names: Battiato
+      given-names: Sebastiano
+  journal: "arXiv preprint arXiv:2602.04939"
+  year: 2026
+  doi: "10.48550/arXiv.2602.04939"
+  url: "https://arxiv.org/abs/2602.04939"

@@ -1,0 +1,19 @@
+# Videos
+videos/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store

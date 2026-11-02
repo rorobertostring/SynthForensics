@@ -1,0 +1,40 @@
+.idea/
+*__pycache__*
+*.vscode*
+*.pyc
+*.pth
+*.pt
+*.dat
+
+# Shell scripts
+*.sh
+
+# Results
+results/
+results_finetuned/
+results_from_scratch/
+
+# Logs and weights
+logs/
+weights/
+
+# Fake test set directories (symlinks to dataset videos)
+SF-*/
+DFB_Data/
+
+# Preprocessing intermediate files
+preprocessing/dataset_json/
+preprocessing/fake/
+preprocessing/real/
+
+# Pretrained backbone weights
+training/pretrained/
+
+# Dataset samples
+datasets/UADFV/
+
+# ProDet code from its original repository (see README)
+ProDet_original/
+training/detectors/prodet_detector.py
+training/detectors/utils/prodet_api.py
+training/loss/soft_ce_loss.py
