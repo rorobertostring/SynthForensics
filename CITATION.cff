@@ -28,6 +28,7 @@ authors:
     affiliation: University of Catania
 license: MIT
 url: "https://rorobertostring.github.io/SynthForensics.github.io/"
+repository-code: "https://github.com/rorobertostring/SynthForensics"
 preferred-citation:
   type: article
   title: "SynthForensics: Benchmarking and Evaluating People-Centric Synthetic Video Deepfakes"
