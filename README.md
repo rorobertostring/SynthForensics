@@ -375,6 +375,6 @@ If you use SynthForensics, please cite our paper. The BibTeX entry of the NeurIP
 
 For questions about the code, please open an issue in this repository; for questions about the dataset, use the [Discussions](https://huggingface.co/datasets/SynthForensics/SynthForensics/discussions) of the Hugging Face dataset. For anything else, including reports of misuse and removal requests, write to [roberto.leotta@ictlab.srl](mailto:roberto.leotta@ictlab.srl).
 
-## License 
+## License
 
 The code in this repository is released under the [MIT License](LICENSE.md). Third-party code under `src/` keeps the license of its original repository, included in its folder; the code of CFM, DFD-FCG and ProDet, whose original repositories have no license, is not included (see [`src/detectors/README.md`](src/detectors/README.md)). The SynthForensics dataset is released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) for non-commercial research; the terms of use are on the [Hugging Face dataset page](https://huggingface.co/datasets/SynthForensics/SynthForensics).
