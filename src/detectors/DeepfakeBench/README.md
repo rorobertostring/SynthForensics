@@ -34,21 +34,21 @@ Then delete two lines from `training/detectors/prodet_detector.py`: `from datase
 
 ## Input format
 
-Build the fake test set folders from the published SynthForensics dataset, and the real test set folders from the original FaceForensics++ (raw) and DeepFakeDetection (c23) videos. From the DeepfakeBench root:
+Build the fake test set folders from the published SynthForensics dataset, and the real test set folders from the original FaceForensics++ (raw) and DeepFakeDetection (raw) videos. From the DeepfakeBench root:
 
 ```bash
 python preprocessing/create_dfb_data.py --dataset_root /path/to/SynthForensics
 
 python preprocessing/create_dfb_real_data.py \
     --ffpp_dir /path/to/FF++/original_sequences/youtube/raw/videos \
-    --dfd_dir  /path/to/DFD/original_sequences/actors/c23/videos
+    --dfd_dir  /path/to/DFD/original_sequences/actors/raw/videos
 ```
 
 Expected original real videos:
 
 ```
 FF++/original_sequences/youtube/raw/videos/000.mp4 ...
-DFD/original_sequences/actors/c23/videos/01__exit_phone_room.mp4 ...
+DFD/original_sequences/actors/raw/videos/01__exit_phone_room.mp4 ...
 ```
 
 Expected output structure:

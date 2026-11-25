@@ -16,7 +16,7 @@ Test videos:
 Usage (from the DeepfakeBench root):
     python preprocessing/create_dfb_real_data.py \\
         --ffpp_dir /path/to/FF++/original_sequences/youtube/raw/videos \\
-        --dfd_dir  /path/to/DFD/original_sequences/actors/c23/videos
+        --dfd_dir  /path/to/DFD/original_sequences/actors/raw/videos
 """
 
 import argparse
@@ -64,7 +64,7 @@ def main():
     p.add_argument('--ffpp_dir', required=True, type=Path,
                    help='FF++ original videos (original_sequences/youtube/raw/videos)')
     p.add_argument('--dfd_dir', required=True, type=Path,
-                   help='DFD original videos (original_sequences/actors/c23/videos)')
+                   help='DFD original videos (original_sequences/actors/raw/videos)')
     p.add_argument('--output_dir', type=Path, default=DEFAULT_OUTPUT_DIR,
                    help='Output folder (default: <DeepfakeBench>/DFB_Data/real)')
     p.add_argument('--test_json', type=Path, default=DEFAULT_TEST_JSON,
