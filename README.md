@@ -227,6 +227,8 @@ The fields depend on the generator; the Output section of each `GENERATION.md` i
 | **CRF23** | Progressive compression of the Canonical video, simulating real-world distribution |
 | **CRF40** | Stronger compression of the Canonical video |
 
+To build the Canonical, CRF23, and CRF40 versions from Raw videos, use [`src/generators/utils/make_compression_versions.py`](src/generators/utils/make_compression_versions.py); see [Compression versions](src/generators/README.md#compression-versions) for the FFmpeg versions used.
+
 ## Repository
 
 ```
